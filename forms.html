@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(202, 199, 199);
+            padding: 40px;
+        }
+        .form{
+            background-color: white;
+            width: 65%;
+            margin: auto;
+            padding: 30px;
+            color: rgb(72, 72, 72);
+            box-shadow: 4px 4px 8px;
+            border-radius: 20px;
+
+        }
+        .form h1{
+            text-align: center;
+        }
+        label{
+        display: block;
+        padding-bottom: 10px;
+    }
+    input,select{
+        margin-bottom: 20px;
+        width: 100%;
+        padding: 7px;
+        color: rgb(72, 72, 72);
+    }
+    input[type="radio"],input[type="checkbox"]{
+        width: auto;
+    }
+    fieldset{
+        border: none;
+    }
+    </style>
+</head>
+<body>
+    <div class="form">
+        <h1>User Information</h1>
+        <form action="#">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name">
+
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age">
+
+            <label for="dob">Date of Birth</label>
+            <input type="date" name="dob" id="dob">
+
+            <label for="city">City</label>
+
+            <select name="city" id="city">
+                <option value="">Select City</option>
+                <option value="karachi">Karachi</option>
+                <option value="lahore">Lahore</option>
+                <option value="islamabad">Iaslamabd</option>
+                <option value="peshawar">Peshawar</option>
+            </select>
+           
+            <label for="time">Time</label>
+            <input type="time" name="time" id="time">
+
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" minlength="8" maxlength="16">
+            <label for="department">Department</label>
+            <input type="text" name="dept" id="department" value="Computer Engineering" readonly>
+
+            <fieldset>
+                <legend>Gender</legend>
+                <label for="male">
+                    <input type="radio" name="Gender" id="male" value="male">Male</label>
+                <label for="female"><input type="radio" name="Gender" id="female" value="female">feMale</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Services</legend>
+                <label for="webdev"><input type="checkbox" name="Services" id="webdev" value="webdev">Web Development</label>
+                <label for="softdev"><input type="checkbox" name="Services" id="softdev" value="softdev">Software Development</label>
+                <label for="gamedev"><input type="checkbox" name="Services" id="gamedev" value="gamedev">Game Development</label>
+            </fieldset>
+
+
+            <button type="submit">Submit Now</button>
+            <button type="reset">Reset</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Pseudo Class Selectors and element Selectors</title>
+<style>
+/* Styles go here. */
+header li {
+  list-style: none;
+}
+a:hover{
+  background-color: rgb(225, 146, 146);
+  color: rgb(21, 10, 133);
+}
+a:active{
+    font-size: x-large;
+}
+a:visited{
+    color: yellowgreen;
+}
+a:link, a:visited {
+  text-decoration: none;
+  background-color: rgb(102, 17, 145);
+  border: 1px solid blue;
+  color: black;
+  display: block;
+  width: 200px;
+  text-align: center;
+  margin-bottom: 1px;
+}
+
+header li:nth-child(3n) {
+  font-size: 24px;
+}
+
+section div:nth-child(odd) {
+  background-color: gray;
+}
+
+section div:nth-child(even) {
+  background-color: rgb(232, 122, 194);
+}
+
+section div:nth-child(5):hover {
+  background-color: green;
+  cursor: pointer;
+  color: aqua;
+}
+::selection {
+  color: white;
+  background-color: rgb(108, 141, 163);
+}
+p::first-line{
+  background-color: rgb(87, 144, 67);
+}
+p::first-letter{
+  background-color: rgb(186, 105, 5);
+  font-weight: 500;
+}
+section div:nth-child(7)::after{
+  content: '*';
+}
+
+
+/* 
+
+:first-line{
+  background-color: blanchedalmond;
+}
+
+div{
+    
+}
+section div:nth-child(3n) {
+  background-color: rgb(232, 122, 194);
+  color: blue;
+} */
+</style>
+</head>
+<body>
+<h1>Pseudo Class Selectors</h1>
+
+<header>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="http://goo.gl/V0Wl6s" target="_blank">AngularJS Course</a></li>
+    <li><a href="http://www.facebook.com/CourseraWebDev" target="_blank">Facebook Fan Page</a></li>
+  </ul>
+  <a href="https://www.google.com/search?q=google&oq=google&gs_lcrp=EgZjaHJvbWUqBwgAEAAYjwIyBwgAEAAYjwIyEwgBEC4YgwEYxwEYsQMY0QMYgAQyDQgCEAAYgwEYsQMYgAQyBggDEEUYQDINCAQQABiDARixAxiABDIGCAUQRRg8MgYIBhBFGDwyBggHEEUYPNIBCDM4MzBqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8">facebook</a>
+</header>
+
+<section>
+  <div>DIV 1</div>
+  <div>DIV 2</div>
+  <div>DIV 3</div>
+  <div>DIV 4</div>
+  <div>DIV 5</div>
+  <div>DIV 6</div>
+  <div>DIV 7</div>
+  <div>DIV 8</div>
+  <div>DIV 9</div>
+  <div>DIV 10</div>
+  <div>DIV 11</div>
+  <div>DIV 12</div>
+  <div>DIV 13</div>
+  <div>DIV 14</div>
+  <div>DIV 15</div>
+  <div>DIV 16</div>
+  <div>DIV 17</div>
+  <div>DIV 18</div>
+  <div>DIV 19</div>
+  <div>DIV 20</div>
+</section>
+
+<p> 
+  Using this property we can change any particular element or line..Pseudo-class selectors are very powerful Make sure your selector is still readable Simple/Readable &gt; Complicated/Tricky 
+</p>
+
+</body>
+</html>

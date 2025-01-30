@@ -1,0 +1,17 @@
+/* External CSS for class.html */
+
+.para1{
+    width: 50%;
+    margin: 10px auto;
+    font-style: italic;
+    color: blueviolet;
+
+}
+.head{
+    background-image: url(image/green-tree-python-9295182_1280.jpg);
+    height: 500px;
+    background-position: center;
+    text-align: center;
+    color: white;
+    
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    div{
+        height: 100px;
+        width: 100px;
+        background-color: aqua;
+        transition-timing-function: ease-in-out;
+        transition-delay: 1s;
+        transition-duration: 5s;
+        transition-property: all;
+
+    }
+    div:hover{
+        background-color: bisque;
+        width: 150px;
+        height: 150px;
+    }
+    h1{
+        
+        animation-name: h;
+        animation-delay: 1s;
+        animation-duration: 4s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        
+    }
+    @keyframes h{
+        0%{color: red;
+            font-family: 'Times New Roman', Times, serif; }
+        100%{color: blue; 
+        font-family: cursive;}
+
+    }
+</style>
+</head>
+<body>
+    <h1>Animation heading </h1>
+    <div>
+        Transition
+    </div>
+</body>
+</html>

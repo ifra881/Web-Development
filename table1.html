@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Semantics</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <table border="">
+        <thead>
+            <tr>
+                <th>Day</th>
+                <th>Time</th>
+                <th>Topics</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3">Monday</td>
+                <td>some text</td>
+                <td rowspan="3">Some text</td>
+            </tr>
+            <tr>
+                <td>some text</td>
+            </tr>
+            <tr>
+                <td>some text</td>
+            </tr>
+            <tr>
+                <td>some text</td>
+                <td colspan="2">some big text</td>
+            </tr>
+            <tr>
+                <td>Some text</td>
+                <td>Some text</td>
+                <td>Some text</td>
+
+            </tr>
+            <tr>
+                <td rowspan="2">sme text</td>
+                <td>Some text</td>
+                <td>Some text</td>
+                
+            </tr>
+            <tr>
+                <td colspan="2">some text</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

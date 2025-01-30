@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Lexend", serif;
+      }
+      .header {
+        background-color: #5b1515;
+        padding: 30px;
+        text-align: center;
+        color: white;
+      }
+      .navbar{
+        background-color: #572d2d;
+        padding: 10px;
+        text-align: center;
+      }
+      .navbar a{
+        padding: 7px;
+        color: white;
+        text-decoration: none;
+      }
+      .container{
+        display: flex;
+        margin: 10px;
+        padding: 20px;
+        background-color: #fee2e2;
+        flex-wrap: wrap-reverse;
+      }
+      .text-section{
+        flex: 3;
+        padding: 20px;
+        /* order: 2; */
+      }
+      .text-section h1{
+        font-size: 40px;
+      }
+      .image{
+        flex: 2;
+        /* order: 1; */
+        
+      }
+      img{
+        border-radius: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <h1>Header</h1>
+      <p>Welcome to my page</p>
+    </header>
+    <nav class="navbar">
+      <a href="#">Home</a>
+      <a href="#">AboutUs</a>
+      <a href="#">Blog</a>
+      <a href="#">Contact Us</a>
+      
+    </nav>
+    <section class="container">
+      <aricle class="text-section">
+        <h1>Hello There</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
+          omnis!
+        </p>
+      </aricle>
+      <aside class="image">
+        <img
+          src="highland-cow-8972000_1280.jpg"
+          alt="cow"
+          width="300px"
+          loading="lazy"
+        />
+      </aside>
+    </section>
+  </body>
+</html>
